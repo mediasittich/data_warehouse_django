@@ -25,7 +25,7 @@ class Vehicle(models.Model):
     updated_at = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
-        return registration_plate
+        return self.registration_plate
 
 
 class PersonVehicle(models.Model):
